@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * 全局返回值统一封装
  */
 @EnableWebMvc
-@ControllerAdvice(basePackages = {"com.wu.dynamic.transaction.controller"})
+@ControllerAdvice(basePackages = {"com.wu.mysql.lock.controller"})
 public class GlobalReturnConfig implements ResponseBodyAdvice<Object> {
     @Override
     public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {

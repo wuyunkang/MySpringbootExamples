@@ -13,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ILockService extends IService<Lock> {
 
+    void TestInsert();
+
+    void TestUpdate();
 }

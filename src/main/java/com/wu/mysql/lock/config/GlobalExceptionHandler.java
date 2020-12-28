@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 
-@ControllerAdvice(basePackages = {"com.wu.dynamic.transaction.controller"})
+@ControllerAdvice(basePackages = {"com.wu.mysql.lock.controller"})
 public class GlobalExceptionHandler {
     private static final Logger LOG = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 

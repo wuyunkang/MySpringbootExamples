@@ -17,4 +17,20 @@ import org.springframework.stereotype.Service;
 @Service
 public class LockServiceImpl extends ServiceImpl<LockMapper, Lock> implements ILockService {
 
+    @Override
+    public void TestInsert() {
+        Lock lock =Lock.builder()
+                .id(3)
+                .name("1")
+                .version(1)
+                .build();
+        this.baseMapper.insert(lock);
+    }
+
+    @Override
+    public void TestUpdate() {
+        Lock lock = this.baseMapper.selectById(1);
+        lock.setName("2");
+        this.baseMapper.updateById(lock);
+    }
 }
